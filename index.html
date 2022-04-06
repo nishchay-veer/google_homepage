@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WelcomeToGoogle</title>
+    <style>
+        *{
+            margin: 0;
+            max-width: 100%;
+            box-sizing: border-box;
+            max-height: 100%;
+        }
+        .navigation{
+            display: flex;
+            flex-direction: row;
+            background-color: black;
+            width: 100vw;
+            height: 10vh;
+            color: rgb(199, 193, 193);
+            align-items: center;
+        }
+        .Options{
+            margin-left: 0px;
+            display: flex;
+        }
+        .Options .left{
+            display: flex;
+            /* width: 50%; */
+            height: 10px;
+            padding: 20px;
+            margin: 5px;
+            /* margin-left: 0px; */
+            justify-content: flex-start;
+            align-items: center;
+            
+            /* border: 2px solid red; */
+        }
+        .Options ul li{
+            list-style: none;
+            margin-left: 10px;
+
+        }
+        .Options .right{
+            display: flex;
+            /* width: 50vw; */
+            height: 10px;
+            padding: 20px;
+            margin: 5px;
+            /* margin-left: auto; */
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .Signing-up ul li{
+            list-style: none;
+            margin-left: 10px;
+
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            /* border: 2px solid black; */
+            width: 100vw;
+            height: 80vh;
+            background-color: white;
+            align-items: center;
+            justify-content: center;
+
+        }
+        section .img-logo{
+            width: 50%;
+            max-width: 50%;
+            height: auto;
+            /* border: 2px solid black; */
+            margin: 2px;
+            text-align: center;
+
+        }
+        section .searchBar{
+            width: 50%;
+            height: 100px;
+            margin: 2px;
+            /* border: 2px solid black; */
+            background-color: white;
+            display: flex;
+            align-items: center;
+
+
+        }
+        section .searchBar input{
+            width: 100%;
+            padding-left: 5px;
+            height: 50px;
+            border: 2px solid black;
+            border-radius: 25px ;
+        }
+        section .searchBar input:hover{
+            box-shadow: 5px;
+        }
+        section .twoOptions{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: auto;
+            /* border: 2px solid black; */
+            align-items: center;
+            justify-content: center;
+
+        }
+        section .twoOptions .option-1:hover{
+            background-color: white;
+            color: black;
+            cursor: pointer;
+            width: 100%;
+            height: auto;
+        }
+        section .twoOptions .option-1{
+            width: 100vw;
+            height: auto;
+        } 
+        section .twoOptions .option-2{
+            width: 100vw;
+            height: auto;
+        } 
+        section .twoOptions .option-2:hover{
+            background-color: white;
+            color: black;
+            cursor: pointer;
+            width: 100%;
+            height: auto;
+        }
+        section .twoOptions .option-1{
+            width: 150px;
+            height: 50px;
+            border: 2px solid black;
+            background-color: black;
+            color: white;
+            margin-right: 50px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+        section .twoOptions .option-2{
+            width: 150px;
+            height: 50px;
+            border: 2px solid black;
+            background-color: black;
+            border-radius: 20px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+        footer{
+            height: 8vh;
+            background-color: rgb(202, 198, 198);
+        }
+        @media screen and (max-width : 700px){
+            section .img-logo{
+                width: 50%;
+                height: auto;
+                background: url(https://blog.hubspot.com/hs-fs/hubfs/The%20Secret%20History%20of%20the%20Google%20Logo-4.jpeg?width=528&name=The%20Secret%20History%20of%20the%20Google%20Logo-4.jpeg) no-repeat center center cover ;
+                /* border: 2px solid black; */
+                
+            }
+            .Options .right
+            {
+                display: none;
+            }
+
+        }
+
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <div class="Options">
+            <ul class = "left">
+                <li>Google+</li>
+                
+                <li>Search</li>
+                <li>Images</li>
+                <li>Maps</li>
+                <li>Play</li>
+                <li>YouTube</li>
+                <li>News</li>
+                <li>Gmail</li>
+                <li>More</li>
+            </ul>
+            <ul class="right">
+                <li>Sign In</li>
+                <li>Settings</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <section>
+        <div class="img-logo">
+            <img src= "https://blog.hubspot.com/hs-fs/hubfs/The%20Secret%20History%20of%20the%20Google%20Logo-4.jpeg?width=528&name=The%20Secret%20History%20of%20the%20Google%20Logo-4.jpeg" id = "image">
+        </div>
+        <div class="searchBar">
+            <input type="text" placeholder="Search 'Ok Google' ">
+        </div>
+        <div class="twoOptions">
+            <div class = "option-1"> Google Search</div>
+            <div class = "option-2">I'm Feeling Lucky</div>
+        </div>
+
+    </section>
+    <footer>
+        <!-- <div class="foot-1"></div> -->
+        
+    </footer>
+</body>
+</html>
